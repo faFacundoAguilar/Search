@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine Example- FA</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white">
+    <div class="container mx-auto p-4">
+        <!-- Header -->
+        <nav class="flex justify-center" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                <li class="inline-flex items-center">
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        <svg class="w-3 h-3 me-2.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 9 4-4-4-4" />
+                        </svg>
+                        <a href="#"
+                            class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span
+                            class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Search engine</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidehead">
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-circle text-blue-200 dark:text-gray-400"></i>
+                        <i class="fa-solid fa-circle text-gray-200"></i>
+                        <i class="fa-solid fa-circle text-blue-200 dark:text-gray-400"></i>
+                    </div>
+                    <hr class="my-4 border-t border-gray-200 dark:border-gray-600">
+                </div>
+                <div class="sidebody h-96">
+                    <div class="relative">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text"
+                            class="w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300">
+                        <i class="fa-solid fa-magnifying-glass glass absolute top-3 right-3 text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="sidefoot">
+                    <hr class="my-4 border-t border-gray-200 dark:border-gray-600">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-brands fa-github text-gray-700 dark:text-gray-400"></i>
+                        <i class="fa-regular fa-envelope text-gray-700 dark:text-gray-400"></i>
+                        <i class="fa-brands fa-pinterest text-gray-700 dark:text-gray-400"></i>
+                        <i class="fa-brands fa-whatsapp text-gray-700 dark:text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div id="root" class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Aquí se generarán dinámicamente las tarjetas de productos -->
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Funcionalidad básica de  motor de búsqueda para un conjunto estático de productos . -->
+    <script>
+        const products = [
+            {
+                id: 0,
+                image: 'image/a1.jpg',
+                title: 'Iphone 12 Pro Max',
+                price: 120,
+            },
+            {
+                id: 1,
+                image: 'image/a2.jpg',
+                title: 'Ray-Ban Clubmaster',
+                price: 60,
+            },
+            {
+                id: 2,
+                image: 'image/a3.jpg',
+                title: 'Apple Watch',
+                price: 230,
+            },
+            {
+                id: 3,
+                image: 'image/a4.jpg',
+                title: 'Subwoofers',
+                price: 100,
+            },
+            {
+                id: 4,
+                image: 'image/a6.jpg',
+                title: 'Microphone professional',
+                price: 230,
+            },
+            {
+                id: 5,
+                image: 'image/a7.jpg',
+                title: 'Nikon Camera',
+                price: 100,
+            },
+        ];
+
+        const searchBar = document.getElementById('searchBar');
+        const root = document.getElementById('root');
+
+        // Función pa mostrar los productos según el filtro de búsqueda
+        const displayItems = (items) => {
+            root.innerHTML = items.map(item => `
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 w-full ">
+                    <div class="p-2">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="px-4 py-2">
+                        <p class="text-lg font-semibold text-gray-900 dark:text-white">${item.title}</p>
+                        <p class="text-gray-700 dark:text-gray-300">$ ${item.price}.00</p>
+                        <button class="block w-full mt-4 py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Add to cart</button>
+                    </div>
+                </div>
+            `).join('');
+        };
+
+        // productos al cargar la página
+        displayItems(products);
+
+        // productos en tiempo real según el texto ingresado en el input de búsqueda
+        searchBar.addEventListener('input', (e) => {
+            const searchText = e.target.value.toLowerCase();
+            const filteredProducts = products.filter(product =>
+                product.title.toLowerCase().includes(searchText)
+            );
+            displayItems(filteredProducts);
+        });
+    </script>
+</body>
+
+</html>
