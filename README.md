@@ -9,10 +9,10 @@ For the final version, I used Node.js, Express, MongoDB.
 > Search Bar: Users can input text to search for specific products.
 > - Dynamic Product Display: Products are displayed in a grid layout that adjusts based on screen size.
 > - Responsive Design: Utilizes Tailwind CSS for responsive and mobile-friendly design.
-- Technologies Used:
-> HTML: Structure of the web page.
-> JavaScript: Logic for filtering and displaying products based on user input.
-> Tailwind CSS: Provides utility-first CSS classes for styling.
-> Font Awesome: Icon library for visual elements.
+> Technologies Used:
+> - HTML: Structure of the web page.
+> - JavaScript: Logic for filtering and displaying products based on user input.
+> - Tailwind CSS: Provides utility-first CSS classes for styling.
+> - Font Awesome: Icon library for visual elements.
 
 
