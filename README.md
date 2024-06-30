@@ -1,18 +1,10 @@
 https://github.com/faFacundoAguilar/Search/assets/124779712/c83c216f-994a-4705-b878-4bbd06179bc8
 ## Search Engine Example
 - This is a simple example that showcases a search engine interface I developed using HTML, JavaScript, and Tailwind CSS. It allows users to search for products in a predefined list and dynamically display results based on the search query.
-
+- I'm sharing this search engine so you can use it as a starting point and take it to the next level according to your project's needs.😉
 > [!IMPORTANT]
-> Información crucial
-
-
-
-
-
-- > [!IMPORTANT]
 > For production-ready applications, consider implementing backend technologies to handle data storage and business logic.
 For the final version, I used Node.js, Express, MongoDB.
-
 
 ### Features:
 > Search Bar: Users can input text to search for specific products.
