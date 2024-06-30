@@ -4,6 +4,8 @@ https://github.com/faFacundoAguilar/Search/assets/124779712/c83c216f-994a-4705-b
 - > [!IMPORTANT]
 > For production-ready applications, consider implementing backend technologies to handle data storage and business logic.
 For the final version, I used Node.js, Express, MongoDB.
+
+
 ### Features:
 > Search Bar: Users can input text to search for specific products.
 > - Dynamic Product Display: Products are displayed in a grid layout that adjusts based on screen size.
@@ -17,3 +19,18 @@ For the final version, I used Node.js, Express, MongoDB.
 > - - I'm sharing this search engine so you can use it as a starting point and take it to the next level according to your project's needs.
 
 
+
+> [!NOTE]
+> Esto es información adicional que puede ayudar al usuario
+
+> [!TIP]
+> Un consejo útil o una sugerencia.
+
+> [!IMPORTANT]
+> Información crucial
+
+> [!WARNING]
+> Necesita la atención del usuario
+
+> [!CAUTION]
+> Consecuencias negativas si no haces caso
