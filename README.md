@@ -14,23 +14,4 @@ For the final version, I used Node.js, Express, MongoDB.
 > - HTML: Structure of the web page.
 > - JavaScript: Logic for filtering and displaying products based on user input.
 > - Tailwind CSS: Provides utility-first CSS classes for styling.
-> - Font Awesome: Icon library for visual elements.
 
-> - - I'm sharing this search engine so you can use it as a starting point and take it to the next level according to your project's needs.
-
-
-
-> [!NOTE]
-> Esto es información adicional que puede ayudar al usuario
-
-> [!TIP]
-> Un consejo útil o una sugerencia.
-
-> [!IMPORTANT]
-> Información crucial
-
-> [!WARNING]
-> Necesita la atención del usuario
-
-> [!CAUTION]
-> Consecuencias negativas si no haces caso
