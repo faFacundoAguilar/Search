@@ -1,6 +1,6 @@
 ## Ejemplo de Motor de Búsqueda
 
-Este es un ejemplo sensillo que muestra una interfaz de motor de búsqueda que desarrolle con HTML, JavaScript y Tailwind CSS. Permite a los usuarios buscar productos en una lista predefinida y mostrar los resultados dinámicamente según la consulta de búsqueda.
+Este es un ejemplo sencillo que muestra una interfaz de motor de búsqueda que desarrolle con HTML, JavaScript y Tailwind CSS. Permite a los usuarios buscar productos en una lista predefinida y mostrar los resultados dinámicamente según la consulta de búsqueda.
 Les comparto esta buscador para que lo puedan tomar como punto de partida y llevarlo al siguiente nivel, segun las necesidades de tu proyecto.
 
 ❗ Para aplicaciones listas para producción, considera implementar tecnologías backend para manejar el almacenamiento de datos y la lógica empresarial.
